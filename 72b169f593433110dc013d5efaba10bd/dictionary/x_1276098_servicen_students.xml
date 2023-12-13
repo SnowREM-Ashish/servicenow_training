@@ -10,6 +10,7 @@
             </choice>
         </element>
         <element label="Last name" max_length="40" name="last_name" type="string"/>
+        <element label="Mobile number" max_length="40" name="mobile_number" type="phone_number_e164"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <index name="index">
             <element name="course_registered"/>
