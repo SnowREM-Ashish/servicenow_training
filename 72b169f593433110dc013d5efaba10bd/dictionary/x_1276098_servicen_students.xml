@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="97aea97993833110dc013d5efaba108c" label="Students" max_length="40" name="x_1276098_servicen_students" type="collection">
+        <element label="Course Registered" mandatory="true" max_length="32" name="course_registered" reference="x_1276098_servicen_course" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Email Id" max_length="40" name="email_id" type="string"/>
+        <element label="First name" max_length="40" name="first_name" type="string"/>
+        <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+                <element inactive_on_update="false" label="Female" sequence="1" value="female"/>
+            </choice>
+        </element>
+        <element label="Last name" max_length="40" name="last_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="course_registered"/>
+        </index>
+    </element>
+</database>
